@@ -1,4 +1,6 @@
 build/
 install/
 log/
+nav2_logs/
+*.lognav2_logs/
 *.log
