@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<robot name="heavy_box">
+  <link name="box_link">
+    <visual>
+      <geometry><box size="0.5 0.5 0.5"/></geometry>
+      <material name="red"><color rgba="1 0 0 1"/></material>
+    </visual>
+    <collision>
+      <geometry><box size="0.5 0.5 0.5"/></geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <inertia ixx="0.417" ixy="0" ixz="0" iyy="0.417" iyz="0" izz="0.417"/>
+    </inertial>
+  </link>
+
+  <gazebo reference="box_link">
+    <material>Gazebo/Red</material>
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <kp>1000000.0</kp>
+    <kd>100.0</kd>
+  </gazebo>
+</robot>
